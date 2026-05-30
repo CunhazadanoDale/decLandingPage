@@ -2,6 +2,7 @@ import { HeroSection } from '@/components/sections/home/HeroSection'
 import { ApparelShowcaseSection } from '@/components/sections/home/CardShowcaseSection'
 import { ModelsShowcaseSection } from '@/components/sections/home/ModelsShowcaseSection'
 import { PricingSection } from '@/components/sections/home/PricingSection'
+import { CtaBannerSection } from '@/components/sections/home/CtaBannerSection'
 
 export function HomePage() {
   return (
@@ -27,6 +28,8 @@ export function HomePage() {
       <ModelsShowcaseSection />
 
       <PricingSection />
+
+      <CtaBannerSection />
     </div>
   )
 }

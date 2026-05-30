@@ -1,6 +1,7 @@
 import { HeroSection } from '@/components/sections/home/HeroSection'
 import { ApparelShowcaseSection } from '@/components/sections/home/CardShowcaseSection'
 import { ModelsShowcaseSection } from '@/components/sections/home/ModelsShowcaseSection'
+import { PricingSection } from '@/components/sections/home/PricingSection'
 
 export function HomePage() {
   return (
@@ -24,6 +25,8 @@ export function HomePage() {
       />
 
       <ModelsShowcaseSection />
+
+      <PricingSection />
     </div>
   )
 }

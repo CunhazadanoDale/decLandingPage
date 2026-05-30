@@ -137,7 +137,7 @@ export function ModelsShowcaseSection({
         </div>
 
         {/* Grid principal: fotos + lista */}
-        <div className="flex flex-col md:flex-row items-start gap-8 md:gap-10 lg:gap-14 select-none w-full max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-12 lg:gap-20 select-none w-full">
 
           {/* ── Esquerda: grade de fotos ── */}
           <div className="flex gap-2 md:gap-3 flex-shrink-0 overflow-x-auto pb-1 md:pb-0">
@@ -147,7 +147,7 @@ export function ModelsShowcaseSection({
                 <PhotoCard
                   key={model.id}
                   model={model}
-                  className="w-[110px] h-[120px] sm:w-[130px] sm:h-[140px] md:w-[155px] md:h-[165px]"
+                  className="w-[110px] h-[120px] sm:w-[130px] sm:h-[140px] md:w-[155px] md:h-[165px] lg:w-[195px] lg:h-[210px]"
                   hoveredId={hoveredId}
                   onHover={setHoveredId}
                 />
@@ -155,12 +155,12 @@ export function ModelsShowcaseSection({
             </div>
 
             {/* Coluna 2 – deslocada para baixo */}
-            <div className="flex flex-col gap-2 md:gap-3 mt-[48px] sm:mt-[56px] md:mt-[68px]">
+            <div className="flex flex-col gap-2 md:gap-3 mt-[48px] sm:mt-[56px] md:mt-[68px] lg:mt-[84px]">
               {col2.map((model) => (
                 <PhotoCard
                   key={model.id}
                   model={model}
-                  className="w-[122px] h-[132px] sm:w-[145px] sm:h-[155px] md:w-[172px] md:h-[182px]"
+                  className="w-[122px] h-[132px] sm:w-[145px] sm:h-[155px] md:w-[172px] md:h-[182px] lg:w-[215px] lg:h-[228px]"
                   hoveredId={hoveredId}
                   onHover={setHoveredId}
                 />
@@ -168,12 +168,12 @@ export function ModelsShowcaseSection({
             </div>
 
             {/* Coluna 3 – deslocada levemente */}
-            <div className="flex flex-col gap-2 md:gap-3 mt-[22px] sm:mt-[26px] md:mt-[32px]">
+            <div className="flex flex-col gap-2 md:gap-3 mt-[22px] sm:mt-[26px] md:mt-[32px] lg:mt-[40px]">
               {col3.map((model) => (
                 <PhotoCard
                   key={model.id}
                   model={model}
-                  className="w-[115px] h-[125px] sm:w-[136px] sm:h-[146px] md:w-[162px] md:h-[172px]"
+                  className="w-[115px] h-[125px] sm:w-[136px] sm:h-[146px] md:w-[162px] md:h-[172px] lg:w-[202px] lg:h-[216px]"
                   hoveredId={hoveredId}
                   onHover={setHoveredId}
                 />
@@ -182,7 +182,7 @@ export function ModelsShowcaseSection({
           </div>
 
           {/* ── Direita: lista de modelos ── */}
-          <div className="flex flex-col sm:grid sm:grid-cols-2 md:flex md:flex-col gap-4 md:gap-5 pt-0 md:pt-2 flex-1 w-full">
+          <div className="flex flex-col sm:grid sm:grid-cols-2 md:flex md:flex-col gap-4 md:gap-6 pt-0 md:pt-4 flex-1 w-full max-w-xs lg:max-w-sm">
             {models.map((model) => (
               <ModelRow
                 key={model.id}

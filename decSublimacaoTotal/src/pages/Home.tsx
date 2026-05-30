@@ -1,5 +1,6 @@
 import { HeroSection } from '@/components/sections/home/HeroSection'
 import { ApparelShowcaseSection } from '@/components/sections/home/CardShowcaseSection'
+import { ModelsShowcaseSection } from '@/components/sections/home/ModelsShowcaseSection'
 
 export function HomePage() {
   return (
@@ -7,20 +8,23 @@ export function HomePage() {
       <HeroSection />
 
       <ApparelShowcaseSection
-  title={
-    <>
-      Qualidade Profissional em Cada
-      <br />
-      Camisa Personalizada
-    </>
-  }
-  description="Produzimos camisas personalizadas em tecido Dry Fit com sublimação total para empresas, eventos, equipes esportivas, escolas, igrejas e excursões. Estampas vibrantes, conforto e durabilidade em cada peça."
-  buttonText="Solicitar Meu Orçamento"
-  buttonLink="https://wa.me/5585SEUNUMERO"
-  imageUrl1="https://loremflickr.com/600/400/shirt?random=1"
-  imageUrl2="https://loremflickr.com/600/400/shirt?random=2"
-  imageUrl3="https://loremflickr.com/600/400/shirt?random=3"
-/>
+        title={
+          <>
+            Qualidade Profissional em Cada
+            <br />
+            Camisa Personalizada
+          </>
+        }
+        description="Produzimos camisas personalizadas em tecido Dry Fit com sublimação total para empresas, eventos, equipes esportivas, escolas, igrejas e excursões. Estampas vibrantes, conforto e durabilidade em cada peça."
+        buttonText="Solicitar Meu Orçamento"
+        buttonLink="https://wa.me/5585SEUNUMERO"
+        imageUrl1="https://loremflickr.com/600/400/shirt?random=1"
+        imageUrl2="https://loremflickr.com/600/400/shirt?random=2"
+        imageUrl3="https://loremflickr.com/600/400/shirt?random=3"
+      />
+
+      <ModelsShowcaseSection />
     </div>
   )
 }
+

@@ -3,10 +3,12 @@ import { ApparelShowcaseSection } from '@/components/sections/home/CardShowcaseS
 import { ModelsShowcaseSection } from '@/components/sections/home/ModelsShowcaseSection'
 import { PricingSection } from '@/components/sections/home/PricingSection'
 import { CtaBannerSection } from '@/components/sections/home/CtaBannerSection'
+import { FaqSection } from '@/components/sections/home/FaqSection'
+import { FooterSection } from '@/components/sections/home/FooterSection'
 
 export function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <HeroSection />
 
       <ApparelShowcaseSection
@@ -30,7 +32,13 @@ export function HomePage() {
       <PricingSection />
 
       <CtaBannerSection />
+
+      <FaqSection />
+
+      <FooterSection />
     </div>
   )
 }
+
+
 
